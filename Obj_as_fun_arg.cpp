@@ -8,7 +8,7 @@ class time{
 	 int minutes;
 	 
 	 public:
-			void getTime(int h , int m)
+			void getTime(int h=0 , int m=0)
 			{hour = h; minutes =m;}
 			
 			void putTime(void){
@@ -30,16 +30,16 @@ void time :: sum (time T1, time T2){
 
 int main(){
 	
-	time t1,t2,t3;
+	time t1,t2;
 	
 	t1.getTime(2,45);
 	t2.getTime(3,30);
 	
-	t3.sum(t1,t2);
+	t2.sum(t1,t2);
 	
 	cout<< "Time : " ; t1.putTime();
 	cout<< "Time : " ;  t2.putTime();
-	cout<< "Time : " ;  t3.putTime();
+	//cout<< "Time : " ;  t3.putTime();
 		   
 	return 0;
 }
