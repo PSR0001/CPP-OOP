@@ -2,9 +2,10 @@
 using namespace std;
 
 int main(){
+	int a;
+	cin >>"Enter the number : ">>a;
 	
-	dout<< "hello World";
-		   
+		cout<<"The number is "<<a;
 	
 	return 0;
 }
